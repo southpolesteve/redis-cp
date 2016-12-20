@@ -1,10 +1,10 @@
 {
   "name": "redis-cp",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A library and CLI tool for copying between redis databases",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "author": "Steve Faulkner <southpolesteve@gmail.com>",
   "bin": {
@@ -15,5 +15,8 @@
     "ioredis": "^2.4.3",
     "ora": "^0.4.0",
     "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
   }
 }

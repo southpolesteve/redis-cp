@@ -10,8 +10,8 @@ module.exports = function (src, trgt, opts) {
   const spinner = ora('Processing...').start()
 
   const scanOpts = {}
-  if (opts.m){ scanOpts.match = opts.m }
-  if (opts.c){ scanOpts.count = opts.c }
+  if (opts.m) { scanOpts.match = opts.m }
+  if (opts.c) { scanOpts.count = opts.c }
 
   const stream = source.scanStream(scanOpts)
 
@@ -37,4 +37,4 @@ module.exports = function (src, trgt, opts) {
     spinner.succeed()
     process.exit()
   })
-};
+}
